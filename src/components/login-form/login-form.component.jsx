@@ -34,7 +34,7 @@ class LoginForm extends React.Component {
   render() {
     const {loggedIn} = this.props;
     if (loggedIn) {
-      return <Redirect to='/dashboard' />
+      return <Redirect to='/pajakme/dashboard' />
     }
     return (
       <Form onSubmit={this.handleLogin} className='login-form'>
