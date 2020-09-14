@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39bf3c058cbc315d07f75729b9964a98",
+    "revision": "4d53b399edcdb9e37149ce11af6cdad2",
     "url": "/pajakme/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pajakme/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "0bc7b9ae0f887f0b1ca1",
+    "revision": "15da00119329083d0624",
     "url": "/pajakme/static/css/main.4d390909.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pajakme/static/js/2.1e398531.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bc7b9ae0f887f0b1ca1",
-    "url": "/pajakme/static/js/main.d93cb1af.chunk.js"
+    "revision": "15da00119329083d0624",
+    "url": "/pajakme/static/js/main.fbf566bf.chunk.js"
   },
   {
     "revision": "51d798032981ffd53402",
