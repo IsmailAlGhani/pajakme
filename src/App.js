@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from './components/navigation/navigation.component';
+import Footer from './components/footer/footer.component.jsx';
+import { autoLogin } from './redux/user/user.actions';
+import './App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { connect } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  unsubscribeFromAuth = null;
+
+  componentDidMount() {
+    this.props.autoLogin();
+  }
+
+  render () {
+    return (
+      <div className="App">
+        <Navigation />
+        <Footer />
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => ({
+  autoLogin: () => dispatch(autoLogin())
+});
+
+export default connect(null,mapDispatchToProps)(App);
