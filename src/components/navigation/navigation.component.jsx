@@ -24,20 +24,20 @@ const Navigation = ({ loggedIn, logUserOut }) => (
       </Navbar.Brand>
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
-          <Nav.Link as={Link} to='/pajakme'>Home</Nav.Link>
+          <Nav.Link as={Link} to='/'>Home</Nav.Link>
           <Nav.Link as={Link} to='/dashboard'>Dashboard</Nav.Link>
           {!loggedIn ?            
-            <Nav.Link as={Link} to='/pajakme/login'>Login</Nav.Link>
+            <Nav.Link as={Link} to='/login'>Login</Nav.Link>
             :
-            <Nav.Link as={Link} to='/pajakme' onClick={logUserOut}>Logout</Nav.Link>
+            <Nav.Link as={Link} to='/' onClick={logUserOut}>Logout</Nav.Link>
           }
         </Nav>
       </Navbar.Collapse>
     </Navbar>
     <Switch>
-      <Route exact path='/pajakme' component={Homepage}/>
-      <Route path='/pajakme/login' component={LoginForm}/>
-      <PrivateRoute loggin={loggedIn} path='/pajakme/dashboard' component={Dashboard}/>
+      <Route exact path='/' component={Homepage}/>
+      <Route path='/login' component={LoginForm}/>
+      <PrivateRoute loggin={loggedIn} path='/dashboard' component={Dashboard}/>
     </Switch>
   </div>
 );
@@ -47,7 +47,7 @@ const PrivateRoute = ({component: Component, loggin, ...rest}) => {
     <Route {...rest} render={props => (
       loggin ?
         <Component {...props} />
-      : <Redirect to="/pajakme/login" />
+      : <Redirect to="/login" />
     )} />
   );
 };
