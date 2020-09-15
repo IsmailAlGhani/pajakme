@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pajakme/static/css/main.4d390909.chunk.css",
-    "main.js": "/pajakme/static/js/main.fbf566bf.chunk.js",
-    "main.js.map": "/pajakme/static/js/main.fbf566bf.chunk.js.map",
+    "main.js": "/pajakme/static/js/main.7841b3e8.chunk.js",
+    "main.js.map": "/pajakme/static/js/main.7841b3e8.chunk.js.map",
     "runtime-main.js": "/pajakme/static/js/runtime-main.0272b389.js",
     "runtime-main.js.map": "/pajakme/static/js/runtime-main.0272b389.js.map",
     "static/css/2.11829350.chunk.css": "/pajakme/static/css/2.11829350.chunk.css",
     "static/js/2.1e398531.chunk.js": "/pajakme/static/js/2.1e398531.chunk.js",
     "static/js/2.1e398531.chunk.js.map": "/pajakme/static/js/2.1e398531.chunk.js.map",
     "index.html": "/pajakme/index.html",
-    "precache-manifest.2d420b63a7debd2d6c315900d1dc51c1.js": "/pajakme/precache-manifest.2d420b63a7debd2d6c315900d1dc51c1.js",
+    "precache-manifest.cc151e607ecabed1aa421939055ad252.js": "/pajakme/precache-manifest.cc151e607ecabed1aa421939055ad252.js",
     "service-worker.js": "/pajakme/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/pajakme/static/css/2.11829350.chunk.css.map",
     "static/css/main.4d390909.chunk.css.map": "/pajakme/static/css/main.4d390909.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.11829350.chunk.css",
     "static/js/2.1e398531.chunk.js",
     "static/css/main.4d390909.chunk.css",
-    "static/js/main.fbf566bf.chunk.js"
+    "static/js/main.7841b3e8.chunk.js"
   ]
 }
